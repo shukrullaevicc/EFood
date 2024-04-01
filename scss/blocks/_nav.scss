@@ -21,6 +21,9 @@
                 @include item_link();
 
             }
+            .item__link:hover{
+                color: $orangecolor;
+            }
         }
         .nav__icons{
             display: flex;
