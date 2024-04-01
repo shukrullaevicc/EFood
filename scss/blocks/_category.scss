@@ -1,0 +1,82 @@
+@mixin order-card__text($fweight, $tcolor){
+    font-weight: $fweight;
+    font-size: 14px;
+    line-height: 17.78px;
+    color: $tcolor;
+}
+
+.category{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .category__wrapper{
+        width: 100%;
+        height: 560px;
+        margin-top: 121.46px        ;
+        .section__subtitle{
+            @include section__subtitle(#363853);
+
+            text-align: center;
+            .section__subtitle-orange{
+                @include section__subtitle(#ff7a50);
+
+            }
+        }
+        .category__menu-cards{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0 26px;
+            margin-top: 54.87px;
+            .category__menu-card{
+                width: 210px;
+                height: 70px;
+                background-color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0 8px;
+                border-radius: 8px;
+                .menu-card__info{
+                    font-size: 20px;
+                    line-height: 23.7px;
+                    color: #363853;
+                }
+            }
+        }
+        .category__order-cards{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0  26px;
+            margin-top: 39px;
+            .category__order-card{
+                width: 100%;
+                padding: 16px 16px 22px 16px;
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .order-card__info{
+                    @include order-card__text(400, #363853);
+
+                    margin-top: 20px;
+                }
+                .order-card__price{
+                    @include order-card__text(500, #363853);
+
+                    margin-top: 8px;
+                }
+                .order-card__button{
+                    @include order-card__text(400, white);
+
+                    margin-top: 10px;
+                    background-color: $orangecolor;
+                    padding: 7px 13px;
+                    border-radius: 2px;
+                }
+            }
+        }
+    }
+}

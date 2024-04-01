@@ -1,0 +1,38 @@
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .footer__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 31px 31px;
+        margin-top: 121px;
+        .list-text{
+                font-size: 18px;
+                letter-spacing: 1px;
+                font-weight: 500;
+                color: #37383D;
+            }
+            .list{   
+                list-style: none;
+                font-size: 14px;    
+                line-height: 16.41px;
+                margin-top: 26px;
+                margin-bottom: 13px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                font-weight: 400; 
+                .list-link{
+                    @include item_link()
+                }
+            }
+            .list__media{
+                display: flex;
+                align-items: center;
+                gap: 0 13px;
+            }  
+    }
+}

@@ -1,0 +1,35 @@
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .nav__wrapper{
+        width: 100%;
+        height: 50.41px;
+        display: flex;
+        align-items: center;
+        gap: 0 60px;
+        margin-top: 45.36px;
+        .nav__logo{
+            flex-grow: 1;
+        }
+        .nav__list{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0 60px;
+            .item__link{
+                @include item_link();
+
+            }
+        }
+        .nav__icons{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0 60px;
+        }
+        .nav__button{
+            @include button($orangecolor, white, none);
+        }
+    }
+}

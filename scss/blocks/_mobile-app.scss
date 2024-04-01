@@ -1,0 +1,34 @@
+.mobile-app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .mobile-app__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 165px;
+        gap: 0 21px;
+        .mobile-app__contant{
+            max-width: 538px;
+            .section__subtitle-orange{
+                @include section__subtitle(#ff7a50);
+
+            }
+            .section__subtitle{
+                @include section__subtitle(#363853);
+
+            }
+            .section__info{
+                @include section__info();
+                
+                margin-top: 30px;
+            }
+            .mobile-app__net{
+                display: flex;
+                align-items: center;
+                gap: 0 35px;
+                margin-top: 30px;
+            }
+        }
+    }
+}            

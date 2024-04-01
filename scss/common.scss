@@ -1,0 +1,58 @@
+@import "./reset";
+
+$orangecolor: #FF7A50;
+
+body{
+    background-color: #F9FAFF;
+}
+
+.container{
+    max-width: 1171px;
+    width: 100%;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+@mixin button($bgcolor, $tcolor, $border){
+    padding: 14.83px 28px;
+    background-color: $bgcolor;
+    border: $border;
+    border-radius: 5px;
+    color: $tcolor;
+    font-size: 18px;
+    line-height: 21.33px;
+    display: inline-block;
+    box-shadow: 0 22px 40px 0 #ff67382a;
+    cursor: pointer;
+}
+
+@mixin item_link(){
+    font-size: 18px;
+    line-height: 21.33px;
+    color: #363853;
+}
+
+@mixin section__info(){
+    font-size: 20px;
+    line-height: 30px;
+    color: #363853;
+}
+
+@mixin section__subtitle($color){
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42.66px;
+    color: $color;
+    text-transform: capitalize;
+}
+
+@import "./blocks/nav";
+@import "./blocks/hero";
+@import "./blocks/category";
+@import "./blocks/delivery";
+@import "./blocks/restaurant";
+@import "./blocks/mobile-app";
+@import "./blocks/our-client";
+@import "./blocks/contact";
+@import "./blocks/footer";
+@import "./blocks/footer-bottom";

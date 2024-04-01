@@ -1,0 +1,49 @@
+@mixin hero__title($color){
+    font-size: 66px;
+    line-height: 78.21px;
+    color: $color;
+    text-transform: capitalize;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .hero__wrapper{
+        margin-top: 86.77px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .hero__content{
+            max-width: 530px;
+            .hero__title{
+                @include hero__title(#363853);
+
+                .hero__title-orange{
+                    @include hero__title(#ff7a50)
+
+                }
+            }
+            .hero__info{
+                @include section__info();
+
+                margin-top: 23px;
+            }
+            .hero__button-wrapper{
+                display: flex;
+                align-items: center;
+                gap: 0 30px;
+                margin-top: 44.78px;
+                .hero__button-primary{
+                    @include button($orangecolor, white, none);
+
+                }
+                .hero__button-secondary{
+                    @include button(transperent, black, 1px solid black);
+
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+}
