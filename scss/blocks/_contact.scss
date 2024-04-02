@@ -25,12 +25,16 @@
             margin-top: 30px;
             background-color: white;
             border-radius: 70px;
+            height: 78px;
             .search-button{
                 padding: 15px 30px;
                 border-radius: 70px;
                 background-color: $orangecolor;
                 color: white;
                 font-size: 14px;  
+                height: 80%;
+                align-self: center;
+                margin-right: 10px;
             }   
             .search{
                 flex: 1;
