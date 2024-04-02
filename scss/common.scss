@@ -24,6 +24,7 @@ body{
     display: inline-block;
     box-shadow: 0 22px 40px 0 #ff67382a;
     cursor: pointer;
+    user-select: none;
 }
 
 @mixin item_link(){
